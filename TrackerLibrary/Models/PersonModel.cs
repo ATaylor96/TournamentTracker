@@ -35,5 +35,15 @@ namespace TrackerLibrary.Models
         /// Represents the cellphone number of this person.
         /// </summary>
         public string CellphoneNumber { get; set; }
+
+
+        public string FullName
+        {
+            get
+            {
+                return $"{ FirstName } { LastName }";
+            }
+        }
+
     }
 }
